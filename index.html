@@ -3,6 +3,22 @@
 <body>
 <h2>Test</h2>
 <iframe height="550px" width="100%" src="https://rorytyro.github.io/hosted-checkout-demo/index.html" name="hosted-checkout-iframe"></iframe>
-<iframe height="550px" width="100%" src="file:///Users/rmccaffrey/Documents/code/hosted-session-iframe-test.html" name="hosted-session-iframe"></iframe>
+
+
+<button onclick="loadHostedSession()">Load Hosted Session</button>
+<iframe height="550px" id="hostedSession" width="100%" src=""></iframe>
+
+<button onclick="loadHostedSessionFix()">Load Hosted Session iframe fix</button>
+<iframe height="550px" id="hostedSessionFix" width="100%" src=""></iframe>
+
+
+<script>
+function loadHostedSession() {
+  document.getElementById("hostedSession").src = "https://rorytyro.github.io/hosted-session-cardtype-validation/hosted-session-cardtype-validation.html";
+}
+function loadHostedSessionFix() {
+  document.getElementById("hostedSessionFix").src = "https://rorytyro.github.io/hosted-session-iframe-fix/index.html";
+}
+</script>
   </body>
 </html>
