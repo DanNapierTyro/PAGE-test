@@ -8,8 +8,11 @@
 <button onclick="loadHostedSession()">Load Hosted Session</button>
 <iframe height="550px" id="hostedSession" width="100%" src=""></iframe>
 
-<button onclick="loadHostedSessionFix()">Load Hosted Session iframe fix</button>
+<button onclick="loadHostedSessionFix()">Load Hosted Session iframe JS click jack fix</button>
 <iframe height="550px" id="hostedSessionFix" width="100%" src=""></iframe>
+
+  <button onclick="loadHostedSessionXframeFix()">Load Hosted Session iframe JS X Frame Options fix</button>
+<iframe height="550px" id="hostedSessionXframeFix" width="100%" src=""></iframe>
 
 
 <script>
@@ -19,6 +22,11 @@ function loadHostedSession() {
 function loadHostedSessionFix() {
   document.getElementById("hostedSessionFix").src = "https://rorytyro.github.io/hosted-session-iframe-fix/index.html";
 }
+  
+  function loadHostedSessionXframeFix() {
+  document.getElementById("hostedSessionXframeFix").src = "https://php-header-test.herokuapp.com/";
+}
+  
 </script>
   </body>
 </html>
